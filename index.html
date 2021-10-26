@@ -1,0 +1,248 @@
+﻿<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<html>
+
+<head>
+	<title>Playlist Upload</title>
+	<link rel="stylesheet" href="../howto/css/style.css">
+	<link rel="stylesheet" href="css/style.css?update=2">
+	<link rel="stylesheet" href="/css/nav.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/inline.js"></script>
+</head>
+
+<body>
+
+	<div id="outerContainer">
+
+		<div id="container">
+			<h2>
+				<strong>Playlist upload to Smart IPTV</strong>
+			</h2>
+
+
+			<div id="mylist_disclaimer">
+				<p>&bull;&nbsp; Please use
+					<strong>UTF-8 (NO BOM)</strong> encoding when editing and saving your playlist
+					<p>&bull;&nbsp; Use
+						<strong>Save online</strong> only if you have problems loading playlist on your TV due to low memory</p>
+					<p>&bull;&nbsp; Use
+						<strong>Enable list logos</strong> to enable logos included in your playlist (tvg-logo)</p>
+					<p>&bull;&nbsp;
+						<strong>Playlist limit</strong> is 10 Files + 10 playlist URLs</p>
+			</div>
+
+			<br />
+
+
+			<h3>Upload local IPTV playlist File or external playlist URL with auto-update</h3>
+			<form id="file_form" method="post" enctype="multipart/form-data">
+				<table id="url_table" width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tbody>
+
+						<tr>
+
+
+							<td rowspan="2" width="244">
+								<label id="MAC_label" for="text">MAC:</label>
+								<input id="mac_file" name="mac" type="text" placeholder='12:02:94:8C:8E:0A' onfocus="this.placeholder = ''" onblur="this.placeholder = '12:02:94:8C:8E:0A'"
+								/>
+
+							</td>
+
+							<td rowspan="2" align="center">
+
+								<div id="orderButton">
+									<img src="images/swap.svg" />
+								</div>
+
+							</td>
+
+
+							<td id="td_plist1">
+								<div id="file_container">
+									<div id="file1" class="file_field">
+										<label class="file_label" for="file[]">File: </label>
+										<input name="file[]" type="file" class="file" />
+									</div>
+								</div>
+							</td>
+
+
+							<td id="button_cell1">
+								<div id="file_buttons">
+
+									<div id="more_file" class="more_less">
+										<img src="images/plus.svg" />
+									</div>
+									<div id="less_file" class="more_less">
+										<img src="images/minus.svg" />
+									</div>
+								</div>
+							</td>
+
+							<td id="keep_cell" rowspan="2">
+
+								<div id="keep_container">
+
+									<label id="keep_label" for="file" title="Save your playlist on server">Save online</label>
+									<input id="keep_file" type="checkbox" name="keep" id="keep" />
+
+								</div>
+
+								<div class="selectboxes">
+
+									<select id="file_country" class="sel_countries" name="sel_countries" title="EPG Country"></select>
+
+								</div>
+
+								<div class="selectboxes">
+									<select id="file_logo" class="sel_logos" name="sel_logos" title="Playlist logos options">
+										<option value="1" title="Use application logos only">Logos</option>
+										<option value="0" title="Enable logos included in the playlist">Enable list logos</option>
+										<option value="2" title="Only use logos provided in the playlist">Override app logos</option>
+									</select>
+								</div>
+							</td>
+
+
+
+
+							<td rowspan="2">
+
+								<input type="hidden" name="lang" value="en">
+								<div class="captcha_input"></div>
+								<input class="submit" type="submit" name="submit" value="Send" />
+							</td>
+
+
+
+						</tr>
+
+
+						<tr>
+
+							<td id="td_plist2">
+
+								<div id="url_container">
+									<div id="1" class="url_field">
+										<label class="url_label" for="url1">URL: </label>
+										<input class="url" name="url1" type="search" size="40" placeholder='M3U or TXT playlist URL' onfocus="this.placeholder = ''"
+										 onblur="this.placeholder = 'M3U or TXT playlist URL'" />
+									</div>
+								</div>
+							</td>
+
+
+							<td id="button_cell2">
+
+								<div id="url_buttons">
+
+									<div id="more_url" class="more_less">
+										<img src="images/plus.svg" />
+									</div>
+									<div id="less_url" class="more_less">
+										<img src="images/minus.svg" />
+									</div>
+								</div>
+							</td>
+						</tr>
+
+
+
+						<tr>
+
+
+							<td>
+								<div id="url_buttons">
+
+									<div id="more_url" class="more_less">
+										<img src="images/plus.svg" />
+									</div>
+									<div id="less_url" class="more_less">
+										<img src="images/minus.svg" />
+									</div>
+								</div>
+							</td>
+
+
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>
+								<div id="pin_file_text">Enter PIN:</div>
+							</td>
+							<td>
+								<input id="pin_file" name="pin" type="password" size="4" maxlength="4" placeholder='••••' onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = '••••'" />
+							</td>
+						</tr>
+
+
+					</tbody>
+				</table>
+
+			</form>
+
+			<div style="height: 5px;"></div>
+
+
+
+			<h3>Delete playlist</h3>
+
+			<form id="reset_form" method="post" enctype="multipart/form-data">
+
+				<table id="reset_table" border="0" width="100%" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td valign="top" class="macReset">
+								<label id="MAC_label" for="text">MAC:</label>
+								<input id="mac" name="mac" type="text" size="20" placeholder='12:02:94:8C:8E:0A' onfocus="this.placeholder = ''" onblur="this.placeholder = '12:02:94:8C:8E:0A'"
+								/>
+								<!-- Link: <input name="url" type="text" size="50" /> -->
+								<input type="hidden" name="lang" value="en">
+								<input class="submit" type="submit" name="submit" value="Delete" />
+								<input id="pin_reset" name="pin" type="password" size="4" maxlength="4" placeholder='••••' onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = '••••'" />
+
+							</td>
+							<td valign="top" class="messageBox" align="right">
+
+								<div id="captchaBox"></div>
+
+								<div id="messageBox">
+									<div id="boxContent"></div>
+								</div>
+
+							</td>
+						</tr>
+						<tr>
+
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<div style="clear: both;"></div>
+			<div id="explanationBox" style="display: none;">
+				<br />
+				<p>
+					<strong style="color: #c42557;">Explanation of errors:</strong>
+				</p>
+
+				<p>
+					<strong>MAC address is not found!</strong> - The MAC address is input incorrectly or you haven't loaded the App at least once.
+					<br
+					/>
+					<strong>MAC address is not activated!</strong> - TV is not activated.
+					<a href="/activation/" target="_blank">Press here</a> for more information.
+					<br />
+					<strong>Your IP is reported for ban!</strong> - Unlock your MAC in app’s settings (PIN 0000) and restart the browser.
+				</p>
+
+				<!-- 	<br /><br /> -->
+			</div>
+
+		</div>
+</body>
+
+</html>

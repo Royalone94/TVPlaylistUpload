@@ -1,0 +1,189 @@
+/* @override 
+	http://lgiptv.eu/faq/css/style.css */
+
+body {
+	background: #333;
+	-ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+html {
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+h3,h2 {
+	color: #c42557;
+}
+
+a {
+	color: #372b9c;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:link, a:visited {
+	color: #372b9c;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#container {
+	width: 840px;
+	margin: 10px auto;
+	background: #fff;
+	padding: 10px 25px 25px 25px;
+	border-radius: 8px;
+	
+}
+
+#messageBox {
+	
+	float: right;
+	width: 400px;
+	border-radius: 8px;
+	z-index: 2;
+	background: #444;
+	color: white;
+	display: none;
+}
+
+#boxContent {
+	padding: 15px;
+	font-size: 22px;
+	text-align: center;
+}
+
+
+form#mac_form {
+
+}
+
+label#MAC_label {
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 0px 0px 0 0;
+	margin-right: 10px;
+}
+
+input#mac {
+	display: inline;
+	width: 200px;
+	padding: 0px 10px;
+}
+
+input#ott {
+	display: inline;
+	width: 200px;
+	padding: 0px 10px;
+}
+
+input#login, input#pass {
+	display: inline;
+	width: 120px;
+	padding: 0px 10px;
+}
+
+label#file_label {
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 0px 0px 0 0;
+	margin-right: 10px;
+}
+
+
+input#file {
+	width: 280px;
+	padding: 7px 0 0 10px;
+	font-size: 14px;
+	line-height: 36px;
+}
+
+input#submit {
+	padding: 5px 10px;
+	color: white;
+	border: 1px solid #333333;
+	border-radius: 6px;
+	font-size: 16px;
+	background-color: #a00c41;
+}
+
+label#m3u_gen {
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 0px 0px 0 0;
+	margin-right: 10px;
+}
+
+input#m3u_gen {
+	height: 36px;
+	margin-right: 10px;
+	border: 2px solid #aebac2;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 400;
+	outline: none;
+	color: #444;
+	float: left;
+}
+
+input#m3u_upload {
+	height: 36px;
+	margin-right: 10px;
+	border: 2px solid #aebac2;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 400;
+	outline: none;
+	color: #444;
+	float: left;
+}
+
+input#m3u_gen_submit {
+	padding: 5px 10px;
+	color: white;
+	border: 1px solid #333333;
+	border-radius: 6px;
+	font-size: 16px;
+	background-color: #a00c41;
+}
+
+input {
+	height: 36px;
+	margin-right: 10px;
+	border: 2px solid #aebac2;
+	border-radius: 6px;
+	font-size: 18px;
+	font-weight: 400;
+	outline: none;
+	color: #444;
+	float: left;
+}
+
+
+
+table.providers th {
+	padding: 10px 0px;
+	background: #ddd;
+	font-size: 18px;
+}
+
+table.providers td {
+	padding: 8px 5px;
+	text-align: center;
+}
